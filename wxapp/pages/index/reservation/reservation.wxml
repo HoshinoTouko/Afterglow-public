@@ -1,0 +1,32 @@
+<!--pages/reservation/reservation.wxml-->
+<view class="weui-cells__title">座位预约</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">图书馆</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker bindchange="bindLibChange" value="{{libIndex}}" range="{{libList}}">
+        <view class="weui-select weui-select_in-select-after">{{libList[libIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">座位</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker bindchange="bindSeatChange" value="{{seatIndex}}" range="{{seatList}}">
+        <view class="weui-select weui-select_in-select-after">{{seatList[seatIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+</view>
+<view class="submit-reservation-button">
+  <button type="primary" bindtap='makeReservation'>预约</button>
+</view>
+
+<view class="weui-cells__title reservation_history_label">预约历史</view>
+<view class="weui-cells weui-cells_after-title reservation_history_view">
+  <text>{{resText}}</text>
+</view>

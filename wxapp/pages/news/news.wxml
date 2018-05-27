@@ -1,0 +1,55 @@
+<view class="page">
+  <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">通知</view>
+            <view class="weui-panel__bd">
+                <view wx:if="{{not1!=''}}" class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{not1}}</view>
+                    <view class="weui-media-box__desc">{{notcon1}}</view>
+                </view>
+                <view wx:if="{{not2!=''}}" class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{not2}}</view>
+                    <view class="weui-media-box__desc">{{notcon2}}</view>
+                </view>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+
+
+
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">最新新闻</view>
+      <view class="weui-panel__bd">
+        <navigator url="./newsTemp/newsTemp?title={{title1}}&art={{art1}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{img1}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{title1}}</view>
+            <view class="weui-media-box__desc">{{content1}}</view>
+          </view>
+        </navigator>
+        <navigator url="./newsTemp/newsTemp?title={{title2}}&art={{art2}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{img2}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{title2}}</view>
+            <view class="weui-media-box__desc">{{content2}}</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

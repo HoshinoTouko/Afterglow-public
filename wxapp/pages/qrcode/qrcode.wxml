@@ -1,0 +1,50 @@
+<view class='container'>
+  <view class='page-body'>
+    <!-- If not login -->
+    <button 
+      wx:if="{{!hasUserInfo && canIUse}}" 
+      open-type="getUserInfo" 
+      bindgetuserinfo="getUserInfo"
+    > 
+      通过微信登录 
+    </button>
+    <!-- Else -->
+    <block wx:else>
+      <view class="flex-wrp" style="flex-direction:row;">
+        <!-- User info -->
+        <view class="flex-item">
+          <view class="flex-wrp userinfo m-l-10">
+            <view class="flex-item">
+              <image 
+                class="userinfo-avatar" 
+                src="{{userInfo.avatarUrl}}" 
+                background-size="cover" 
+              />
+            </view>
+            <view class="flex-item m-l-10">
+              <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </view>
+          </view> 
+        </view>
+        <!-- Tip -->
+        <view class="flex-item home-tip">
+          <text class="tip-text">点击下方获取或刷新</text>
+        </view>
+        <!-- QR Code -->
+        <view class="flex-item">
+          <view class="img-box">
+            <canvas 
+              bindtap="refreshQRCode" 
+              hidden="{{canvasHidden}}" 
+              style="width: 686rpx;height: 686rpx;background:#f1f1f1;" 
+              canvas-id="mycanvas"
+            />
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="canvas-box">
+    
+</view>

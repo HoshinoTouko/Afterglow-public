@@ -1,0 +1,20 @@
+/* pages/reservation/reservation.wxss */
+@import '../../../lib/weui.wxss';
+
+.submit-reservation-button {
+  width: 80%;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation_history_label {
+  padding-top: 20px;
+}
+
+.reservation_history_view{
+  width: 90%;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

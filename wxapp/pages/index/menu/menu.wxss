@@ -1,0 +1,14 @@
+/* pages/index/menu/menu.wxss */
+@import "../../../lib/weui.wxss";
+
+.page-section {
+  margin-bottom: 20rpx;
+}
+
+.flex-wrp {
+  display: flex;
+}
+
+.menu_item {
+  height: 60px;
+}

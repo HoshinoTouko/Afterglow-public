@@ -1,0 +1,40 @@
+{
+  "pages": [
+    
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/qrcode/qrcode",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/news/newsTemp/newsTemp",
+    "pages/registration/registration",
+    "pages/index/reservation/reservation",
+    "pages/library/library"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "statics/icon/index.png",
+        "selectedIconPath": "statics/icon/index-selected.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "statics/icon/not.png",
+        "selectedIconPath": "statics/icon/not-sel.png",
+        "text": "通知"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Campus Online",
+    "navigationBarTextStyle": "black"
+  }
+}

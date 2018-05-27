@@ -1,0 +1,37 @@
+/* pages/welcome/welcome.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.welcome-banner {
+  padding-top: 50px;
+  font-size: large;
+  color: grey;
+}
+
+.button-view {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-button {
+  padding-top: 80px;
+}
+
+.registration-button {
+  padding-top: 10px;
+}

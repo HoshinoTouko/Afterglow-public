@@ -1,0 +1,9 @@
+/* pages/news/newsTemp/newsTemp.wxss */
+@import "../../../lib/weui.wxss";
+
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}
